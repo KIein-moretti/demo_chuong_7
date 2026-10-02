@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ Solutions & Liên Hệ Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <button class="hamburger-btn" id="hamburgerBtn">&#9776;</button>
+            <div class="brand-title">Solutions</div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Nhập từ khóa cần tìm...">
+        </div>
+    </header>
+
+    <ul class="menu-mobile-vertical" id="mobileMenu">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Dịch vụ</a></li>
+        <li><a href="#">Hỗ trợ</a></li>
+        <li><a href="#" class="openLienHeMobile">Liên hệ</a></li>
+    </ul>
+
+    <nav class="nav-bar">
+        <ul class="menu-horizontal">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#" id="openLienHeBtn">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+        <div class="banner-text">You can replace all this text with your own text.</div>
+        <div class="content-layout">
+            <div class="image-block">
+                <img src="https://picsum.photos/id/1px/600/350" alt="Discussing Image">
+            </div>
+            <div class="text-block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p>Praesent elementum facilisis leo vel fringilla est. Aliquam id diam maecenas ultricies mi eget mauris
+                    pharetra et.</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="footer-item">Họ tên: NGUYỄN VĂN A</div>
+        <div class="footer-item">MSSV: DH52300000</div>
+        <div class="footer-item">Lớp: D23_TH01</div>
+        <div class="footer-item">Ca học: Ca 2</div>
+    </div>
+
+
+    <div class="modal-overlay" id="lienHeModal">
+        <div class="modal-box">
+            <button class="close-modal-btn" id="closeXBtn">&times;</button>
+            <h3>FORM LIÊN HỆ</h3>
+
+            <div class="form-group">
+                <div class="input-row">
+                    <label>Họ tên:<span class="required">*</span></label>
+                    <input type="text" id="txtHoTen" placeholder="họ tên viết hoa">
+                </div>
+                <div class="error-msg" id="errHoTen">Họ và tên không được để trống!</div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-row">
+                    <label>MSSV:<span class="required">*</span></label>
+                    <input type="text" id="txtMSSV" placeholder="vidu: DH52300347">
+                </div>
+                <div class="error-msg" id="errMSSV">MSSV phải gồm đúng 10 ký tự và bắt đầu bằng DH5!</div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-row">
+                    <label>Lời nhắn:</label>
+                    <textarea id="txtLoiNhan" placeholder="lời nhắn"></textarea>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" id="btnGui">Gửi</button>
+                <button type="button" id="btnXoa">Xóa</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
